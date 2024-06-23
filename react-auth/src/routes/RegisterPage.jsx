@@ -59,6 +59,10 @@ const RegisterPage = () => {
           </div>
         )}
       </div>
+
+      <Link to="/login">
+        <a>Go To Login</a>
+      </Link>
     </div>
   );
 };

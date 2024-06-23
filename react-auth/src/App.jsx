@@ -1,6 +1,7 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import RegisterPage from "./routes/RegisterPage";
 import LoginPage from "./routes/LoginPage";
+import ToDoPage from "./routes/ToDoPage";
 
 function App() {
   const router = createBrowserRouter([
@@ -10,7 +11,7 @@ function App() {
     },
     {
       path: "/todo",
-      element: <div>ToDo</div>,
+      element: <ToDoPage />,
     },
     {
       path: "/register",

@@ -17,8 +17,14 @@ const LoginPage = () => {
       headers: {
         "Content-Type": "application/json",
       },
+      //! Sesssion
+      credentials: "include",
     });
+
     const res = await req.json();
+
+    //! JWT
+    // localStorage.setItem("accessToken", res.accessToken);
     setLoginMessage(res.msg);
   };
 
@@ -59,6 +65,9 @@ const LoginPage = () => {
           </div>
         )}
       </div>
+      <Link to="/register">
+        <a>Go To Register</a>
+      </Link>
     </div>
   );
 };
